@@ -14,16 +14,18 @@
 }
 
 //color
-$bg-color-1 :rgba(0, 0, 0, 0.3);
-$bg-color-2: #fff;
-$bg-color-3: rebeccapurple;
+$bg-color-1 :rgba(155, 89, 182, 0.7);
+$bg-color-2: #eee;
+$bg-color-3: #fff;
+$bg-color-4: #777;
+$bg-color-5:#8e44ad;
 
 * {
   box-sizing: border-box;
 }
 
 body{
-  background-color: rgba(155, 89, 182, 0.7);
+  background-color: $bg-color-1;
   font-family: 'Open Sans', sans-serif;
   @include centerFlex;
   height: 100vh;
@@ -32,7 +34,7 @@ body{
 .phone{
   position: relative;
   overflow: hidden;
-  border: 3px solid #eee;
+  border: 3px solid $bg-color-2;
   border-radius: 15px;
   height: 600px;
   width: 340px;
@@ -58,7 +60,7 @@ nav{
   width: 100%;
 }
 nav ul{
-  background-color: #fff;
+  background-color: $bg-color-3;
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -66,7 +68,7 @@ nav ul{
   height: 60px;
 }
 nav li{
-  color: #777;
+  color: $bg-color-4;
   cursor: pointer;
   flex: 1;
   padding: 10px;
@@ -78,5 +80,5 @@ nav ul li p{
 }
 nav ul li:hover,
 nav ul li.active{
-  color: #8e44ad;
+  color: $bg-color-5;
 }
